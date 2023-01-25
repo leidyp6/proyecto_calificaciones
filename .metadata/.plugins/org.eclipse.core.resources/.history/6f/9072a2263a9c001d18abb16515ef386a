@@ -1,0 +1,23 @@
+package com.prueba.controller;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+@RequestMapping(value = "persona")
+public class ControllerPersona {
+
+	@GetMapping(value = "bienvenida")
+	public String consultarPersona(String persona) {
+		return "Bienvenido " + persona;
+	}
+	
+	@GetMapping(value = "bienvenida")
+	public String consultarPersona2() {
+		return "Bienvenido " + persona;
+	}
+	
+}
+
+

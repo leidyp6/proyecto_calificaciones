@@ -1,0 +1,16 @@
+package com.prueba.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+@RequestMapping(value = "persona")
+public class ControllerPersona {
+
+	@GetMapping
+	public String consultarPersona(String persona) {
+		return "Bienvenido " + persona;
+	}
+	
+}

@@ -1,0 +1,13 @@
+package com.prueba.controller;
+
+import org.springframework.stereotype.Controller;
+
+@Controller
+public class ControllerPersona {
+
+	
+	public String consultarPersona(String persona) {
+		return "Bienvenido " + persona;
+	}
+	
+}

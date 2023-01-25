@@ -1,0 +1,9 @@
+package com.prueba.controller;
+
+public class ControllerPersona {
+
+	public String consultarPersona(String persona) {
+		return "Bienvenido " + persona;
+	}
+	
+}
